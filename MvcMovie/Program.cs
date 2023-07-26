@@ -42,4 +42,4 @@ app.MapControllerRoute(
           pattern: "{controller}/{action}/{name}/{id?}");
 
 app.Run();
-//https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/adding-a-view
+//https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/adding-a-view DO THIS LATER
