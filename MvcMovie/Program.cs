@@ -37,4 +37,9 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.MapControllerRoute(
+       name: "Hello",
+          pattern: "{controller}/{action}/{name}/{id?}");
+
 app.Run();
+//https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/adding-a-view

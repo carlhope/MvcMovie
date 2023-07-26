@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MvcMovie.Models;
 using System.Diagnostics;
+using System.Web;
 
 namespace MvcMovie.Controllers
 {
@@ -27,6 +28,11 @@ namespace MvcMovie.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public string Welcome(string name, int ID = 1)
+        {
+            return HttpUtility.HtmlEncode("hello "+name+", ID:"+ID);
         }
     }
 }
